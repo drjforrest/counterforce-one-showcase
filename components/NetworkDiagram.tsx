@@ -10,9 +10,61 @@ interface NetworkDiagramProps {
   postId: string
 }
 
+interface PlotlyTrace {
+  x?: number[]
+  y?: number[]
+  mode?: string
+  type?: string
+  text?: string[]
+  marker?: {
+    size?: number[]
+    color?: string | string[]
+    line?: {
+      width?: number
+      color?: string
+    }
+  }
+  line?: {
+    color?: string
+    width?: number
+  }
+  name?: string
+  showlegend?: boolean
+}
+
+interface PlotlyLayout {
+  title?: string
+  xaxis?: {
+    title?: string
+    showgrid?: boolean
+    zeroline?: boolean
+  }
+  yaxis?: {
+    title?: string
+    showgrid?: boolean
+    zeroline?: boolean
+  }
+  showlegend?: boolean
+  paper_bgcolor?: string
+  plot_bgcolor?: string
+  font?: {
+    family?: string
+    size?: number
+    color?: string
+  }
+  margin?: {
+    l?: number
+    r?: number
+    t?: number
+    b?: number
+  }
+  width?: number
+  height?: number
+}
+
 interface PlotlyData {
-  data: any[]
-  layout: any
+  data: PlotlyTrace[]
+  layout: PlotlyLayout
 }
 
 type NetworkType = 'topic_cluster' | 'temporal_flow' | 'stance_sentiment'
@@ -100,31 +152,29 @@ export function NetworkDiagram({ postId }: NetworkDiagramProps) {
         </div>
       ) : (
         <Plot
-          {...{
-            data: networkData.data,
-            layout: {
-              ...networkData.layout,
-              paper_bgcolor: '#fcfcfc',
-              plot_bgcolor: '#fcfcfc',
-              font: {
-                ...networkData.layout.font,
-                family: 'inherit'
-              },
-              margin: {
-                l: 20,
-                r: 20,
-                t: 60,
-                b: 20
-              }
+          data={networkData.data}
+          layout={{
+            ...networkData.layout,
+            paper_bgcolor: '#fcfcfc',
+            plot_bgcolor: '#fcfcfc',
+            font: {
+              ...networkData.layout.font,
+              family: 'inherit'
             },
-            config: {
-              responsive: true,
-              displayModeBar: true,
-              displaylogo: false,
-              modeBarButtonsToRemove: ['toImage', 'sendDataToCloud', 'lasso2d', 'select2d']
-            },
-            style: { width: '100%', height: '600px' }
-          } as any}
+            margin: {
+              l: 20,
+              r: 20,
+              t: 60,
+              b: 20
+            }
+          }}
+          config={{
+            responsive: true,
+            displayModeBar: true,
+            displaylogo: false,
+            modeBarButtonsToRemove: ['toImage', 'sendDataToCloud', 'lasso2d', 'select2d']
+          }}
+          style={{ width: '100%', height: '600px' }}
         />
       )}
     </div>
