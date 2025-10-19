@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "npm run build:docs && next build --turbopack",
-    "build:docs": "cd docs-src && mkdocs build",
+    "build:docs": "pip install mkdocs && cd docs-src && mkdocs build",
     "dev:docs": "cd docs-src && mkdocs serve",
     "start": "next start",
     "lint": "eslint"
