@@ -4,17 +4,21 @@ import { Hero } from '@/components/Hero'
 import { KeyFindings } from '@/components/KeyFindings'
 import { Methodology } from '@/components/Methodology'
 import { NextSteps } from '@/components/NextSteps'
+import { Navigation } from '@/components/Navigation'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-baby-powder to-slate-gray">
-      <Hero />
-      <DatasetOverview />
-      <CaseStudies />
-      <KeyFindings />
-      <Methodology />
-      <NextSteps />
+      <Navigation />
+      <div className="pt-16"> {/* Add padding for fixed nav */}
+        <Hero />
+        <DatasetOverview />
+        <CaseStudies />
+        <KeyFindings />
+        <Methodology />
+        <NextSteps />
+      </div>
 
       {/* Footer */}
       <footer className="bg-yankees-blue text-baby-powder py-12 mt-20">

@@ -13,10 +13,26 @@ export function Hero() {
             <h2 className="text-2xl font-light mb-6 text-slate-gray">
               Community Resilience to Health Misinformation among Gay, Bisexual, and Other Men who have Sex with Men (gbMSM) Using Reddit
             </h2>
-            <p className="text-xl text-baby-powder leading-relaxed">
-              A computational machine learning and network analysis project, powered by Counter-force-one, analyzing how online communities
+            <p className="text-xl text-baby-powder leading-relaxed mb-8">
+              A computational machine learning and network analysis project, powered by Counterforce technology, analyzing how online communities
               respond to health misinformation in LGBTQ+ digital spaces.
             </p>
+            
+            {/* Action Buttons */}
+            <div className="flex gap-4">
+              <a 
+                href="/docs" 
+                className="bg-cadet-blue text-baby-powder px-6 py-3 rounded-md hover:bg-medium-vermilion transition-colors font-medium"
+              >
+                View Documentation
+              </a>
+              <a 
+                href="#findings" 
+                className="bg-transparent border-2 border-baby-powder text-baby-powder px-6 py-3 rounded-md hover:bg-baby-powder hover:text-yankees-blue transition-colors font-medium"
+              >
+                Explore Research
+              </a>
+            </div>
           </div>
 
           {/* Right Column - Logo */}

@@ -1,0 +1,167 @@
+/* Counterforce Documentation Styling */
+:root {
+  /* Counterforce Color Palette */
+  --cf-maastricht-blue: #131939;
+  --cf-medium-vermilion: #d86d3f;
+  --cf-slate-gray: #79808b;
+  --cf-ebony: #585c62;
+  --cf-deep-carrot-orange: #e86530;
+  --cf-yankees-blue: #22263c;
+  --cf-baby-powder: #fcfcfc;
+  --cf-cadet-blue: #4e989e;
+  --cf-tigers-eye: #dd9543;
+}
+
+/* Override Material theme colors */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--cf-cadet-blue);
+  --md-primary-fg-color--light: var(--cf-cadet-blue);
+  --md-primary-fg-color--dark: var(--cf-yankees-blue);
+  --md-accent-fg-color: var(--cf-medium-vermilion);
+  --md-accent-fg-color--transparent: rgba(216, 109, 63, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--cf-cadet-blue);
+  --md-primary-fg-color--light: var(--cf-cadet-blue);
+  --md-primary-fg-color--dark: var(--cf-maastricht-blue);
+  --md-accent-fg-color: var(--cf-tigers-eye);
+  --md-accent-fg-color--transparent: rgba(221, 149, 67, 0.1);
+}
+
+/* Header customization */
+.md-header {
+  background: linear-gradient(135deg, var(--cf-yankees-blue) 0%, var(--cf-maastricht-blue) 100%);
+}
+
+.md-header-nav__title {
+  font-weight: 600;
+  color: var(--cf-baby-powder);
+}
+
+/* Navigation styling */
+.md-nav__title {
+  color: var(--cf-yankees-blue);
+  font-weight: 600;
+}
+
+.md-nav__link--active {
+  color: var(--cf-cadet-blue);
+  font-weight: 500;
+}
+
+.md-nav__link:hover {
+  color: var(--cf-medium-vermilion);
+}
+
+/* Content area */
+.md-content {
+  max-width: none;
+}
+
+.md-content__inner {
+  margin: 0 2rem;
+}
+
+/* Code blocks */
+.highlight pre {
+  background-color: var(--cf-maastricht-blue);
+  color: var(--cf-baby-powder);
+}
+
+/* Buttons and links */
+.md-button {
+  background: var(--cf-cadet-blue);
+  color: var(--cf-baby-powder);
+  border: none;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+}
+
+.md-button:hover {
+  background: var(--cf-medium-vermilion);
+  transform: translateY(-1px);
+}
+
+/* Admonitions */
+.md-typeset .admonition.note {
+  border-color: var(--cf-cadet-blue);
+}
+
+.md-typeset .admonition.note > .admonition-title {
+  background-color: rgba(78, 152, 158, 0.1);
+  border-color: var(--cf-cadet-blue);
+}
+
+.md-typeset .admonition.warning {
+  border-color: var(--cf-medium-vermilion);
+}
+
+.md-typeset .admonition.warning > .admonition-title {
+  background-color: rgba(216, 109, 63, 0.1);
+  border-color: var(--cf-medium-vermilion);
+}
+
+/* Tables */
+.md-typeset table:not([class]) th {
+  background-color: var(--cf-yankees-blue);
+  color: var(--cf-baby-powder);
+}
+
+.md-typeset table:not([class]) td {
+  border-top: 1px solid var(--cf-slate-gray);
+}
+
+/* Footer */
+.md-footer {
+  background: var(--cf-yankees-blue);
+}
+
+.md-footer-meta {
+  background: var(--cf-maastricht-blue);
+}
+
+/* Search */
+.md-search__input {
+  background: var(--cf-baby-powder);
+}
+
+.md-search__input:focus {
+  border-color: var(--cf-cadet-blue);
+}
+
+/* Tab navigation */
+.md-tabs {
+  background: linear-gradient(to right, var(--cf-yankees-blue), var(--cf-maastricht-blue));
+}
+
+.md-tabs__link {
+  color: var(--cf-baby-powder);
+}
+
+.md-tabs__link--active {
+  color: var(--cf-tigers-eye);
+  border-bottom-color: var(--cf-tigers-eye);
+}
+
+/* Back to showcase link */
+.md-header-nav__source {
+  width: auto;
+}
+
+.showcase-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: var(--cf-medium-vermilion);
+  color: var(--cf-baby-powder);
+  text-decoration: none;
+  border-radius: 0.375rem;
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.showcase-link:hover {
+  background: var(--cf-tigers-eye);
+  transform: translateY(-1px);
+}
