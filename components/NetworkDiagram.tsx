@@ -10,61 +10,10 @@ interface NetworkDiagramProps {
   postId: string
 }
 
-interface PlotlyTrace {
-  x?: number[]
-  y?: number[]
-  mode?: string
-  type?: string
-  text?: string[]
-  marker?: {
-    size?: number[]
-    color?: string | string[]
-    line?: {
-      width?: number
-      color?: string
-    }
-  }
-  line?: {
-    color?: string
-    width?: number
-  }
-  name?: string
-  showlegend?: boolean
-}
-
-interface PlotlyLayout {
-  title?: string
-  xaxis?: {
-    title?: string
-    showgrid?: boolean
-    zeroline?: boolean
-  }
-  yaxis?: {
-    title?: string
-    showgrid?: boolean
-    zeroline?: boolean
-  }
-  showlegend?: boolean
-  paper_bgcolor?: string
-  plot_bgcolor?: string
-  font?: {
-    family?: string
-    size?: number
-    color?: string
-  }
-  margin?: {
-    l?: number
-    r?: number
-    t?: number
-    b?: number
-  }
-  width?: number
-  height?: number
-}
-
+// Use Record for flexible Plotly data structure
 interface PlotlyData {
-  data: PlotlyTrace[]
-  layout: PlotlyLayout
+  data: Record<string, unknown>[]
+  layout: Record<string, unknown>
 }
 
 type NetworkType = 'topic_cluster' | 'temporal_flow' | 'stance_sentiment'
@@ -152,13 +101,13 @@ export function NetworkDiagram({ postId }: NetworkDiagramProps) {
         </div>
       ) : (
         <Plot
-          data={networkData.data}
+          data={networkData.data as any}
           layout={{
             ...networkData.layout,
             paper_bgcolor: '#fcfcfc',
             plot_bgcolor: '#fcfcfc',
             font: {
-              ...networkData.layout.font,
+              ...(networkData.layout.font as any),
               family: 'inherit'
             },
             margin: {
@@ -167,7 +116,7 @@ export function NetworkDiagram({ postId }: NetworkDiagramProps) {
               t: 60,
               b: 20
             }
-          }}
+          } as any}
           config={{
             responsive: true,
             displayModeBar: true,
