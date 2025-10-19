@@ -86,7 +86,7 @@ export function DatasetOverview() {
             </div>
             <div className="flex gap-3">
               <div className="text-yankees-blue font-bold">2.</div>
-              <p className="text-ebony">Who are the "knowledge brokers" providing accurate health information?</p>
+              <p className="text-ebony">Who are the &quot;knowledge brokers&quot; providing accurate health information?</p>
             </div>
             <div className="flex gap-3">
               <div className="text-yankees-blue font-bold">3.</div>
