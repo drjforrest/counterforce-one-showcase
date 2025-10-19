@@ -1,0 +1,46 @@
+[
+  {
+    "post_id": "1ls1tyz",
+    "title": "U=U, 100%!",
+    "score": 2268,
+    "comments": 67,
+    "annotation_type": "health_info",
+    "accuracy_label": "partially_accurate",
+    "severity": 2,
+    "community_response": "supportive",
+    "notes": "U=U concept is scientifically accurate (CDC/WHO/NIH endorsed). However, post contains a significant typo: uses > (greater than) instead of < (less than) for viral load thresholds. Should read <200 and <40, not >200 and >40. This error could confuse readers about what undetectable means. Community reinforces accurate science and adds important context about trust, adherence, and other STIs. Great demo of: community correcting/contextualizing imperfect information."
+  },
+  {
+    "post_id": "1lyphrb",
+    "title": "HIV is life altering whether your on treatment or not (What they don\u2019t tell you)",
+    "score": 1131,
+    "comments": 70,
+    "annotation_type": "health_info, personal_experience",
+    "accuracy_label": "partially_accurate",
+    "severity": 3,
+    "community_response": "mixed",
+    "notes": "Contains real science with legitimate PubMed citations (gut damage, lymphatic fibrosis). However, title/framing is alarmist and suggests treatment doesn't work well - misleading. Overstates universality of symptoms and permanent damage. Valid lived experience but missing context that MOST people on ART live relatively normal lives. Community shows mixed response - some validate experience, some question if AI-generated. Great demo of: subtle misinformation detection, community debate."
+  },
+  {
+    "post_id": "1la8c64",
+    "title": "was recently diagnosed with hiv",
+    "score": 523,
+    "comments": 68,
+    "annotation_type": "support_seeking, personal_experience",
+    "accuracy_label": "not_applicable",
+    "severity": 1,
+    "community_response": "supportive",
+    "notes": "Personal disclosure seeking support. No health claims made. Overwhelmingly supportive community response with knowledge brokers (30+ year survivors) educating newly diagnosed person. Practical advice (keep meds by bedside), hope (cure research), and some tough love accountability. Perfect demo of: peer support patterns, community resilience, knowledge broker identification."
+  },
+  {
+    "post_id": "1lhs70z",
+    "title": "Now that prep exists folks are being fucking weird about me wanting to use condoms",
+    "score": 476,
+    "comments": 56,
+    "annotation_type": "community_discussion, personal_experience",
+    "accuracy_label": "not_applicable",
+    "severity": 2,
+    "community_response": "educational",
+    "notes": "Discusses risk perception and PrEP vs condoms. Post has slightly preachy/morally superior tone but raises valid concerns. Reveals potential knowledge gap in community (PrEP only prevents HIV, not other STIs). Community response is highly educational: reminds about drug-resistant gonorrhea, shares STI experiences, supports bodily autonomy. Balanced perspectives (some prefer condoms, some raw with PrEP). Great demo of: community health education in action, risk decision-making discussions."
+  }
+]

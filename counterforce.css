@@ -1,0 +1,104 @@
+/* CSS HEX */
+
+    --Maastricht-Blue: #000000;
+
+    --Medium-vermilion: #000000;
+
+    --Slate-gray: #000000;
+
+    --Ebony: #000000;
+
+    --Deep-carrot-orange: #000000;
+
+    --Yankees-blue: #000000;
+
+    --Baby-powder: #000000;
+
+    --Cadet-blue: #000000;
+
+    --Tiger's-eye: #000000;
+
+
+/* CSS HSL */
+
+    --Maastricht-Blue: hsla(0, 0%, 0%, 1.00);
+
+    --Medium-vermilion: hsla(0, 0%, 0%, 1.00);
+
+    --Slate-gray: hsla(0, 0%, 0%, 1.00);
+
+    --Ebony: hsla(0, 0%, 0%, 1.00);
+
+    --Deep-carrot-orange: hsla(0, 0%, 0%, 1.00);
+
+    --Yankees-blue: hsla(0, 0%, 0%, 1.00);
+
+    --Baby-powder: hsla(0, 0%, 0%, 1.00);
+
+    --Cadet-blue: hsla(0, 0%, 0%, 1.00);
+
+    --Tiger's-eye: hsla(0, 0%, 0%, 1.00);
+
+
+/* SCSS HEX */
+
+    $Maastricht-Blue: #000000;
+
+    $Medium-vermilion: #000000;
+
+    $Slate-gray: #000000;
+
+    $Ebony: #000000;
+
+    $Deep-carrot-orange: #000000;
+
+    $Yankees-blue: #000000;
+
+    $Baby-powder: #000000;
+
+    $Cadet-blue: #000000;
+
+    $Tiger's-eye: #000000;
+
+
+/* SCSS HSL */
+
+    $Maastricht-Blue: hsla(0, 0%, 0%, 1.00);
+
+    $Medium-vermilion: hsla(0, 0%, 0%, 1.00);
+
+    $Slate-gray: hsla(0, 0%, 0%, 1.00);
+
+    $Ebony: hsla(0, 0%, 0%, 1.00);
+
+    $Deep-carrot-orange: hsla(0, 0%, 0%, 1.00);
+
+    $Yankees-blue: hsla(0, 0%, 0%, 1.00);
+
+    $Baby-powder: hsla(0, 0%, 0%, 1.00);
+
+    $Cadet-blue: hsla(0, 0%, 0%, 1.00);
+
+    $Tiger's-eye: hsla(0, 0%, 0%, 1.00);
+
+
+/* SCSS RGB */
+
+    $Maastricht-Blue: rgba(0.0000000000, 0.0000000000, 0.0000000000, 1.00);
+
+    $Medium-vermilion: rgba(0.0000000000, 0.0000000000, 0.0000000000, 1.00);
+
+    $Slate-gray: rgba(0.0000000000, 0.0000000000, 0.0000000000, 1.00);
+
+    $Ebony: rgba(0.0000000000, 0.0000000000, 0.0000000000, 1.00);
+
+    $Deep-carrot-orange: rgba(0.0000000000, 0.0000000000, 0.0000000000, 1.00);
+
+    $Yankees-blue: rgba(0.0000000000, 0.0000000000, 0.0000000000, 1.00);
+
+    $Baby-powder: rgba(0.0000000000, 0.0000000000, 0.0000000000, 1.00);
+
+    $Cadet-blue: rgba(0.0000000000, 0.0000000000, 0.0000000000, 1.00);
+
+    $Tiger's-eye: rgba(0.0000000000, 0.0000000000, 0.0000000000, 1.00);
+
