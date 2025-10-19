@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
+import { Layout, Data } from 'plotly.js'
 
 // Dynamically import Plotly to avoid SSR issues
 const Plot = dynamic(() => import('react-plotly.js'), { ssr: false })
@@ -12,8 +13,8 @@ interface NetworkDiagramProps {
 
 // Use Record for flexible Plotly data structure
 interface PlotlyData {
-  data: Record<string, unknown>[]
-  layout: Record<string, unknown>
+  data: Partial<Data>[]
+  layout: Partial<Layout>
 }
 
 type NetworkType = 'topic_cluster' | 'temporal_flow' | 'stance_sentiment'
@@ -101,13 +102,13 @@ export function NetworkDiagram({ postId }: NetworkDiagramProps) {
         </div>
       ) : (
         <Plot
-          data={networkData.data as any}
+          data={networkData.data}
           layout={{
             ...networkData.layout,
             paper_bgcolor: '#fcfcfc',
             plot_bgcolor: '#fcfcfc',
             font: {
-              ...(networkData.layout.font as any),
+              ...(networkData.layout.font),
               family: 'inherit'
             },
             margin: {
@@ -116,7 +117,7 @@ export function NetworkDiagram({ postId }: NetworkDiagramProps) {
               t: 60,
               b: 20
             }
-          } as any}
+          }}
           config={{
             responsive: true,
             displayModeBar: true,
